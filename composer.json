@@ -1,0 +1,21 @@
+{
+    "name": "creatomate/creatomate",
+    "description": "Official PHP SDK for the Creatomate video rendering API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Creatomate\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Casper Kloppenburg",
+            "email": "casper@creatomate.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
