@@ -154,4 +154,35 @@ class TextProperties extends ElementProperties
      * width. A value of 0% disables alignment.
      */
     public const BACKGROUND_ALIGN_THRESHOLD = 'background_align_threshold';
+
+    /**
+     * To use auto-transcription for this text element, set it to the ID of the video element for which subtitles are to
+     * be generated.
+     */
+    public const TRANSCRIPT_SOURCE = 'transcript_source';
+
+    /**
+     * The transcript effect: color, karaoke, highlight, fade, bounce, slide, or enlarge.
+     */
+    public const TRANSCRIPT_EFFECT = 'transcript_effect';
+
+    /**
+     * The transcript split: none, word, or line.
+     */
+    public const TRANSCRIPT_SPLIT = 'transcript_split';
+
+    /**
+     * The transcript placement: static, animate, or align.
+     */
+    public const TRANSCRIPT_PLACEMENT = 'transcript_placement';
+
+    /**
+     * The maximum number of characters shown simultaneously.
+     */
+    public const TRANSCRIPT_MAXIMUM_LENGTH = 'transcript_maximum_length';
+
+    /**
+     * The color applied to the currently spoken text (word or line). Use this in conjunction with "transcript_split".
+     */
+    public const TRANSCRIPT_COLOR = 'transcript_color';
 }
