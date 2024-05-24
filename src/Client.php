@@ -65,7 +65,12 @@ class Client
 
             $updatedRender = $this->fetchRender($render['id'])->wait();
 
-            if ($updatedRender['status'] !== 'planned' && $updatedRender['status'] !== 'rendering' && $updatedRender['status'] !== 'transcribing') {
+            if (
+                $updatedRender['status'] !== 'planned'
+                && $updatedRender['status'] !== 'waiting'
+                && $updatedRender['status'] !== 'transcribing'
+                && $updatedRender['status'] !== 'rendering'
+            ) {
 
                 $id = $updatedRender['id'];
                 $unfinishedRenders = array_filter($unfinishedRenders, static function ($render) use ($id) {
@@ -124,7 +129,7 @@ class Client
         $options = [
             'headers' => [
                 'Authorization' => 'Bearer ' . $this->apiKey,
-                'User-Agent' => 'Creatomate-PHP/1.0.1',
+                'User-Agent' => 'Creatomate-PHP/1.1.0',
             ],
         ];
 

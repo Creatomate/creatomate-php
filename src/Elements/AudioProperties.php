@@ -23,6 +23,12 @@ class AudioProperties
     public const SOURCE = 'source';
 
     /**
+     * This optional parameter indicates whether to generate the audio using a third-party AI platform (such as ElevenLabs
+     * or OpenAI). Refer to the template editor for details on setting up a provider.
+     */
+    public const PROVIDER = 'provider';
+
+    /**
      * Trims the source audio clip to begin at the specified time (in seconds) rather than at the beginning of the audio
      * file.
      */

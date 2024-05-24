@@ -17,6 +17,12 @@ final class ImageProperties extends ElementProperties
     public const SOURCE = 'source';
 
     /**
+     * This optional parameter indicates whether to generate the image using a third-party AI platform (such as OpenAI or
+     * Stability AI). Refer to the template editor for details on setting up a provider.
+     */
+    public const PROVIDER = 'provider';
+
+    /**
      * This property specifies how the image should be resized to fit the element. It can be set to cover, contain, or
      * fill.
      */

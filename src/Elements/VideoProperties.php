@@ -23,6 +23,12 @@ class VideoProperties extends ElementProperties
     public const SOURCE = 'source';
 
     /**
+     * This optional parameter indicates whether to generate the video using a third-party AI platform (such as
+     * Stability AI). Refer to the template editor for details on setting up a provider.
+     */
+    public const PROVIDER = 'provider';
+
+    /**
      * This property specifies how the video should be resized to fit the element. It can be set to cover, contain, or
      * fill.
      */
